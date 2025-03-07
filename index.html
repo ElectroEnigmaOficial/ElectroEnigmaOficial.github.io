@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Enigma - Innovación y Tecnología</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header class="bg-dark text-white py-1">
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="img/logo.png" alt="Logo Electro Enigma" style="width: 150px; opacity: 0.8; margin-right: 20px;">
+            <div class="text-center">
+                <h1>Electro Enigma</h1>
+                <p>Innovación, Mantenimiento y Soluciones Tecnológicas</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Electro Enigma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <button id="multimediaModeBtn" class="btn btn-warning mt-4">Modo Multimedia</button>
+
+
+    <section class="container py-2 text-center"> 
+        <video id="introVideo" src="vid/int.mp4" autoplay poster="img/int.png" class="img-fluid" style="max-width: 80%; height: auto;"></video>
+    </section>
+    
+    <section class="hero-section d-flex align-items-center justify-content-center text-center text-white" style="background: url('https://www.example.com/your-image.jpg') no-repeat center center; background-size: cover;">
+        <div class="container py-3"> 
+            <h1 class="display-3 fw-bold">Innovación y Tecnología</h1>
+            <p class="lead">Soluciones tecnológicas a tu alcance</p>
+
+            <div class="social-links mt-5">
+                <a href="https://www.facebook.com/OficialElectroEnigma/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon mx-3" style="width: 40px;">
+                </a>
+
+                <a href="https://www.youtube.com/@ElectroEnigmaOficial" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/YouTube_full-color_icon_%282024%29.svg" alt="Youtube" class="social-icon mx-3" style="width: 40px;">
+                </a>
+            </div>
+            <a href="#mapa" id="showMapBtn" class="btn btn-light btn-lg mt-4">UBICANOS</a>
+        </div>
+    </section>
+    
+    <section id="principal" class="py-5">
+        <div class="container text-center">
+            <img src="img/CNC.jpeg" alt="CNC fabricada" height="15%" width="30%">
+        </div>
+    </section>
+
+  
+    <section id="mapa" class="py-5">
+        <div class="container  justify-content-center">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2>Encuentra nuestra ubicación</h2>
+                    <div class="map-info">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Dirección:</h3>
+                        </div>
+                        <p>Tierra Blanca, Veracruz, México</p> 
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-clock"></i>
+                            <h3>Horario de Atención:</h3>
+                        </div>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 10:00 AM - 2:00 PM</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30278.069064714266!2d-96.3782323814811!3d18.449264988327737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c3890e46d24c61%3A0x802bafd88c4fb276!2sTierra%20Blanca%2C%20Ver.!5e0!3m2!1ses!2smx!4v1741309330604!5m2!1ses!2smx" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Electro Enigma. Todos los derechos reservados.</p>
+    </footer>
+
+    <audio id="audio" src="aud/aud1.mp3" hidden></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  
+    <script>
+     
+
+        
+    </script>
+</body>
+</html>
